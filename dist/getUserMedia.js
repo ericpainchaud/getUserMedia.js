@@ -6,8 +6,6 @@
 */;(function (window, document) {
     "use strict";
 
-    var _window = window;
-
     window.getUserMedia = function (options, successCallback, errorCallback, _window) {
 
         // Options are required
@@ -137,7 +135,7 @@
                             errorCallback();
                         } else {
                             // Flash interface not ready yet
-                            _window.setTimeout(register, 1000 * (4 - run), run - 1);
+                            setTimeout(register, 1000 * (4 - run), run - 1);
                         }
                     }(3));
 
